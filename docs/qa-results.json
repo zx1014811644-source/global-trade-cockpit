@@ -1,0 +1,184 @@
+{
+  "errors": [],
+  "layouts": [
+    {
+      "name": "desktop",
+      "viewport": [
+        1920,
+        1080
+      ],
+      "document": [
+        1920,
+        1080
+      ],
+      "panels": [
+        {
+          "id": "business",
+          "height": 296,
+          "scroll": 297,
+          "contentBottom": 499.78125,
+          "bottom": 501.515625
+        },
+        {
+          "id": "team",
+          "height": 273,
+          "scroll": 274,
+          "contentBottom": 784.609375,
+          "bottom": 791
+        },
+        {
+          "id": "customer",
+          "height": 296,
+          "scroll": 297,
+          "contentBottom": 494.796875,
+          "bottom": 501.515625
+        },
+        {
+          "id": "traffic",
+          "height": 273,
+          "scroll": 274,
+          "contentBottom": 782.859375,
+          "bottom": 791
+        },
+        {
+          "id": "structure",
+          "height": 233,
+          "scroll": 234,
+          "contentBottom": 1019.78125,
+          "bottom": 1040
+        },
+        {
+          "id": "efficiency",
+          "height": 233,
+          "scroll": 234,
+          "contentBottom": 1037.375,
+          "bottom": 1040
+        }
+      ]
+    },
+    {
+      "name": "laptop",
+      "viewport": [
+        1440,
+        900
+      ],
+      "document": [
+        1440,
+        999
+      ],
+      "panels": [
+        {
+          "id": "business",
+          "height": 277,
+          "scroll": 278,
+          "contentBottom": 454.578125,
+          "bottom": 464.8125
+        },
+        {
+          "id": "team",
+          "height": 256,
+          "scroll": 257,
+          "contentBottom": 734,
+          "bottom": 734
+        },
+        {
+          "id": "customer",
+          "height": 277,
+          "scroll": 278,
+          "contentBottom": 434.984375,
+          "bottom": 464.8125
+        },
+        {
+          "id": "traffic",
+          "height": 256,
+          "scroll": 257,
+          "contentBottom": 721.5625,
+          "bottom": 734
+        },
+        {
+          "id": "structure",
+          "height": 219,
+          "scroll": 220,
+          "contentBottom": 943.578125,
+          "bottom": 966.375
+        },
+        {
+          "id": "efficiency",
+          "height": 219,
+          "scroll": 220,
+          "contentBottom": 965.375,
+          "bottom": 966.375
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        2743
+      ],
+      "panels": [
+        {
+          "id": "business",
+          "height": 298,
+          "scroll": 299,
+          "contentBottom": 1111.921875,
+          "bottom": 1112.921875
+        },
+        {
+          "id": "team",
+          "height": 320,
+          "scroll": 321,
+          "contentBottom": 1444.609375,
+          "bottom": 1445.609375
+        },
+        {
+          "id": "customer",
+          "height": 274,
+          "scroll": 275,
+          "contentBottom": 1731.40625,
+          "bottom": 1732.40625
+        },
+        {
+          "id": "traffic",
+          "height": 304,
+          "scroll": 305,
+          "contentBottom": 2048.1875,
+          "bottom": 2049.1875
+        },
+        {
+          "id": "structure",
+          "height": 395,
+          "scroll": 396,
+          "contentBottom": 2455.703125,
+          "bottom": 2456.703125
+        },
+        {
+          "id": "efficiency",
+          "height": 234,
+          "scroll": 235,
+          "contentBottom": 2702.28125,
+          "bottom": 2703.28125
+        }
+      ]
+    }
+  ],
+  "tests": [
+    "桌面1920×1080、笔记本1440×900、手机390×844无横向溢出",
+    "信用证订单结算方式为L/C",
+    "风险处理状态保存及刷新恢复",
+    "欧洲区域客户/订单/风险联动",
+    "团队一键重分配",
+    "48位客户唤醒计划建立",
+    "3项提效任务保存",
+    "美国尾款逾期详情",
+    "Escape关闭弹窗",
+    "中央六维导航",
+    "手机弹窗边界",
+    "唤醒及提效计划刷新恢复"
+  ]
+}

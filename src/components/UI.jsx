@@ -1,0 +1,14 @@
+import React, {useEffect,useRef} from 'react';
+import { Activity, BarChart3, Users, UserRound, Globe2, Gauge, BriefcaseBusiness, ChevronRight, X, TriangleAlert, MessageSquare, FileText, ShieldCheck, Send, Wallet, Layers, Maximize, Minimize, Check, ArrowUpRight, ArrowRight, Sparkles, RotateCcw, CircleDollarSign, Package, Filter, Clock3, Crosshair } from 'lucide-react';
+const icons={activity:Activity,chart:BarChart3,users:Users,user:UserRound,globe:Globe2,gauge:Gauge,business:BriefcaseBusiness,chevron:ChevronRight,close:X,warning:TriangleAlert,message:MessageSquare,file:FileText,shield:ShieldCheck,send:Send,wallet:Wallet,layers:Layers,max:Maximize,min:Minimize,check:Check,up:ArrowUpRight,arrow:ArrowRight,sparkles:Sparkles,reset:RotateCcw,money:CircleDollarSign,package:Package,filter:Filter,clock:Clock3,target:Crosshair};
+export function Icon({name,size=18,...rest}){const Component=icons[name]||Activity;return <Component size={size} strokeWidth={1.65} aria-hidden="true" {...rest}/>;}
+export function Button({children,icon,onClick,secondary=false,disabled=false,...rest}){return <button className={`button ${secondary?'secondary':''}`} onClick={onClick} disabled={disabled} {...rest}>{icon&&<Icon name={icon} size={15}/>} {children}</button>;}
+export function Panel({title,en,icon,action,children,className='',id}){return <section id={id} className={`panel ${className}`}><header className="panel-header"><h2><Icon name={icon}/>{title}<span>{en}</span></h2>{action}</header><div className="panel-content">{children}</div></section>;}
+export function DetailLink({onClick,children='查看详情'}){return <button className="detail-link" onClick={onClick}>{children}<Icon name="chevron" size={13}/></button>;}
+export function Modal({title,subtitle,children,onClose}){
+ const ref=useRef(null);
+ useEffect(()=>{const dialog=ref.current;dialog.showModal();return()=>dialog.close();},[]);
+ return <dialog ref={ref} className="modal" onCancel={onClose} onClick={e=>{if(e.target===ref.current)onClose();}} aria-labelledby="modal-title"><div className="modal-top"><div><small>{subtitle||'GLOBAL TRADE · 本地演示'}</small><h2 id="modal-title">{title}</h2></div><button className="icon-button" aria-label="关闭详情" onClick={onClose}><Icon name="close"/></button></div><div className="modal-body">{children}</div></dialog>;
+}
+export function Metric({label,value,unit,icon,caption,danger=false,onClick}){const Tag=onClick?'button':'div';return <Tag onClick={onClick} className={`metric ${danger?'danger':''}`}><div className="metric-icon"><Icon name={icon} size={26}/></div><div><div className="metric-label">{label}</div><div className="metric-value">{unit&&<small>{unit}</small>}{value}</div><span className="metric-caption">{caption}</span></div></Tag>;}
+export function Empty({children='当前筛选范围内暂无异常'}){return <div className="empty"><Icon name="check"/>{children}</div>;}
