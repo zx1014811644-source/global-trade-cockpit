@@ -8,6 +8,8 @@
 
 GitHub Pages 在线预览：https://zx1014811644-source.github.io/global-trade-cockpit/
 
+`main` 分支更新后，GitHub Actions 会自动重新构建并发布在线预览。
+
 重新启动：在本目录运行 `npm run dev -- --port 5173 --strictPort`，或双击 `启动看板.command`。首次在其他电脑运行需安装 Node.js，然后执行 `npm install`。
 
 `npm run build` 输出可部署静态资源到 `dist/`；`npm run preview` 可本地预览构建产物。不要直接双击 index.html，应通过本地服务打开。
