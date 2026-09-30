@@ -1,5 +1,7 @@
 # 外贸经营驾驶舱
 
+[![Deploy GitHub Pages](https://github.com/zx1014811644-source/global-trade-cockpit/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/zx1014811644-source/global-trade-cockpit/actions/workflows/deploy-pages.yml)
+
 深蓝科技大屏风格，围绕业务、团队、客户、流量、结构、效率六个维度展示和处理外贸经营信息。
 
 ## 打开
